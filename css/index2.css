@@ -1,0 +1,883 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'IBMPlexSansKR-Light';
+    letter-spacing: 0.5pt;
+    font-weight: 600;
+
+
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* header */
+
+header {
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+}
+
+.logo {
+    flex: 1;
+    padding: 1% 2%;
+
+}
+
+.logo img {
+    width: 80%;
+}
+
+nav {
+    flex: 3;
+    padding: 1.8% 7%;
+}
+
+nav li {
+    width: 16.6%;
+    line-height: 60px;
+    float: left;
+    text-align: center;
+}
+
+nav li:hover {
+    border-bottom: 5px solid #8ab0c7;
+}
+
+
+nav a {
+    display: block;
+    font-size: 1rem;
+}
+
+
+.sub {
+    position: absolute;
+    left: 15%;
+    top: 9%;
+    width: 20%;
+    margin-top: 1%;
+    height: 500px;
+    z-index: 10;
+    text-indent: 10pt;
+}
+
+
+.sub li {
+    width: 60%;
+    color: black;
+    text-align: left;
+}
+
+.sub li:hover {
+    border-bottom: none;
+    background-color: rgba(138, 176, 199, 0.4);
+}
+
+.sub_back {
+    background-color: white;
+    height: 500px;
+    position: absolute;
+    top: 10.1%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 9;
+}
+
+
+
+/* main > nav > model */
+
+
+nav .model {
+    height: 300px;
+    position: absolute;
+    width: 230%;
+    margin-left: 90%;
+    top: 15%;
+
+}
+
+nav .model li {
+    width: 33.3%;
+    height: 140%;
+    text-indent: 0pt;
+
+    border-radius: 5px;
+}
+
+.model li:hover {
+    border-bottom: none;
+    background-color: rgba(138, 176, 199, 0.4);
+}
+
+
+
+nav .model h4 {
+    text-align: center;
+
+}
+
+
+.model li img {
+    width: 100%;
+}
+
+.model_s {
+    display: none;
+    background-color: inherit;
+}
+
+
+.model .try,
+.promo {
+    background-color: white;
+    color: black;
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 7%;
+    border-radius: 5px;
+}
+
+.model .try:hover,
+.promo:hover {
+    background-color: #283239;
+    color: white;
+}
+
+
+.h_right {
+    flex: 1;
+
+    font-size: 1.6rem;
+
+
+}
+
+.h_right ul {
+    display: flex;
+    padding: 15% 20% 0;
+
+}
+
+.h_right li {
+    margin: 0 auto;
+}
+
+
+/* main > nav search */
+
+
+.sub .search {
+    margin-top: 3%;
+    display: flex;
+
+    width: 333%;
+}
+
+.sub .search1 {
+
+    background: white;
+    width: 85%;
+    right: 0;
+    flex: 1
+}
+
+.sub input {
+    padding: 3%;
+    border: none;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+.sub .search1 i {
+    margin-right: 10%;
+}
+
+
+.sub .search2 {
+    flex: 3;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.search2 a {
+    color: #283239;
+    margin-left: 2%;
+}
+
+
+.search3 {
+    width: 320%;
+    height: 410px;
+    display: flex;
+    margin-left: 3%;
+}
+
+.search3_box {
+    width: 33.3%;
+    height: 90%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 8px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+}
+
+.search3_box img {
+    width: 90%;
+    margin-top: 8%;
+    margin-right: 4%;
+}
+
+.search3 p {
+    font-size: 1.2rem;
+    margin-top: -7%;
+    width: 80%;
+    margin-left: 8%;
+}
+
+.search3_box a {
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.12);
+    width: 40%;
+    height: 17%;
+    float: left;
+    margin-left: 6.5%;
+    margin-top: 2%;
+    padding-right: 3%;
+}
+
+.search3_box a:hover {
+    color: white;
+    background-color: #283239;
+}
+
+
+/* visual */
+
+.visual {
+    height: 900px;
+    overflow: hidden;
+
+}
+
+.visual video {
+    width: 100%;
+}
+
+
+/* footer */
+
+footer {
+    height: 300px;
+
+    position: relative;
+    display: flex;
+}
+
+footer .logo_f {
+    flex: 1;
+
+
+    padding: 4% 2% 0;
+}
+
+footer .logo_f img {
+    width: 100%;
+}
+
+footer .menu_f {
+    flex: 2.5;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 1% 0;
+}
+
+.menu_f ul {
+    display: flex;
+}
+
+.menu_f li {
+    padding: 20px;
+}
+
+.menu_f ul li:first-child {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.f_right {
+    padding: 30px;
+}
+
+footer .sns {
+    flex: 1;
+    font-size: 2rem;
+    margin-top: 3%;
+    color: black;
+}
+
+footer .sns ul {
+    display: flex;
+    padding: 3% 35% 0;
+}
+
+footer .sns li {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer {
+    flex: 1;
+    width: 100%;
+}
+
+footer .f_right {
+    flex: 1;
+    background-color: #d7d6da;
+}
+
+.text_f {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1rem;
+}
+
+
+.text_f2 {
+    text-align: center;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 75%;
+    padding: 0 39px 0;
+
+}
+
+
+.copy {
+    font-size: 1rem;
+    text-align: left;
+    position: absolute;
+    padding: 0 5% 0;
+    top: 88%;
+    color: #283239;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 서브 */
+
+
+.sub_main {
+    width: 100%;
+    height: 870px;
+}
+
+.sub_left {
+    position: absolute;
+    color: white;
+    z-index: 9999999999;
+    font-size: 1.8rem;
+    width: 50%;
+    top: 91%;
+    left: 25%;
+    text-align: center;
+    letter-spacing: 3px;
+    display: flex;
+}
+
+.sub_left li {
+    padding: 2%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sub_right li {
+    cursor: pointer;
+}
+
+.sub_right {
+    position: absolute;
+    z-index: 9999999999;
+    color: white;
+    font-size: 1.2rem;
+    text-align: right;
+    right: 1%;
+    top: 20%;
+    letter-spacing: 3px;
+}
+
+
+
+/* sub vid*/
+
+
+.sub_vid {
+    position: absolute;
+    height: 870px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sub_vid video {
+    width: 100%;
+}
+
+
+/* sub model 모델 */
+
+.sub_model {
+    position: absolute;
+    height: 870px;
+    width: 100%;
+    background-color: #283239;
+    overflow: hidden;
+}
+
+.sub_model .model_list {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 9;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.model_list i {
+    margin-left: 10%;
+}
+
+.sub_model .model_list li {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.sub_model .model_img {
+    color: black;
+    width: 540%;
+    position: absolute;
+    height: 880px;
+    top: -50%;
+    left: -50%;
+    z-index: -9999999999999;
+    border: 1px solid gold;
+    overflow: hidden;
+}
+
+.sub_model .model_img img {
+    width: 100%;
+    position: absolute;
+    top: -28%;
+    overflow: hidden;
+}
+
+.sub_model .model_img li {
+    position: absolute;
+    width: 100%;
+    height: 870px;
+    overflow: hidden;
+}
+
+
+
+
+/* sub safe 안전성*/
+
+.sub_safe {
+    position: absolute;
+    height: 870px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.safe_menu i {
+    margin-left: 10%;
+}
+
+.safe_menu {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 9999999;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: 30%;
+}
+
+.safe_menu li {
+    cursor: pointer;
+}
+
+ul.safe_img {
+    color: black;
+    width: 345%;
+    border: 2px solid gold;
+    position: absolute;
+    height: 880px;
+    top: -40%;
+    left: -20%;
+    z-index: -99;
+}
+
+ul.safe_img img {
+    width: 110%;
+    position: absolute;
+    top: -15%;
+    right: 0%;
+}
+
+.safe_img li {
+    position: absolute;
+    width: 100%;
+    height: 870px;
+    overflow: hidden;
+}
+
+
+
+
+/* sub com 편의성 */
+
+.sub_com {
+    position: absolute;
+    height: 870px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.com_menu i {
+    margin-left: 10%;
+}
+
+.com_menu {
+    position: absolute;
+
+    top: 10%;
+    left: 5%;
+    z-index: 9;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: 30%;
+
+}
+
+.com_menu li {
+    cursor: pointer;
+}
+
+ul.com_img {
+    color: black;
+    width: 345%;
+    position: absolute;
+    height: 880px;
+    top: -40%;
+    left: -20%;
+    z-index: -9999999999999;
+}
+
+.vid_beam {
+    height: 1100px;
+    width: 200%;
+    position: absolute;
+    top: 0%;
+    right: -50%;
+}
+
+
+ul.com_img img {
+    width: 110%;
+    position: absolute;
+    top: -15%;
+    right: 0%;
+}
+
+.com_img li {
+    position: absolute;
+    width: 100%;
+    height: 870px;
+    overflow: hidden;
+}
+
+.com_img video {
+    height: 960px;
+    width: 400%;
+    right: -150%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+/* sub design 디자인*/
+
+
+.sub_dg {
+    position: absolute;
+    height: 870px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 1%;
+
+}
+
+
+
+.sub_design {
+    display: flex;
+}
+
+.sub_d1 {
+    flex: 1;
+    
+}
+
+.int_menu {
+    position: absolute;
+    top: 13%;
+    right: 51%;
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 3px;
+ 
+}
+
+.int_menu > li {
+    margin-top: 2%;
+}
+
+.int_img {
+    position: absolute;
+    z-index: -99;
+    top: -73%;
+    left: -380%;
+    background-color: black;
+}
+ 
+
+
+.sub_d1 {
+    color: red;
+    font-size: 5rem;
+}
+
+.int_menu li {
+    cursor: pointer;
+}
+
+.sub_d2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.int_look {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 80%;
+    right: 210%;
+    width: 300px;
+    height: 37px;
+    text-align: center;
+    display: none;
+    border: 1px solid white;
+    border-right: 3px solid white;
+}
+
+
+
+span {
+    background: linear-gradient(white, #8ab0c7, white, #8ab0c7);
+    width: 3px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    right: 210%;
+    animation: move 1s;
+    display: none;
+}
+
+@keyframes move {
+    0% { height: 0  }
+
+    100% { height: 300px }
+}
+
+
+
+/* sub > design > color */
+
+.sub_main .sub_color {
+    top: 100%;
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(white, white, white, #cecdd2, #cecdd2);
+    
+}
+
+.color_menu {
+    width: 22%;
+    height: 290px;
+    font-size: 1rem;
+    left: 5%;
+    position: absolute;
+    top: 5%;
+}
+
+.color_menu > li {
+    padding: 2%;
+}
+
+.color_img {
+    overflow: hidden;
+    position: absolute;
+    right: -241%;
+    top: 3%;
+    width: 250%;
+    height: 100%;
+
+}
+
+.color_img img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sub_d2 .sub_ext {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+}
+
+.sub_ext1 {
+    width: 44%;
+    overflow: hidden;
+    padding-left: 2%;
+    animation: int_move 2s;
+}
+
+@keyframes int_move {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.sub_ext1 img {
+    width: 100%;
+    background-color: black;
+}
+
+.sub_ext i {
+    position: absolute;
+    top: 88%;
+    left: 42%;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.sub_ext1 li {
+    display: none;
+}
+
+.sub_ext1 li:first-child {
+    display: block;
+}
+
+.sub_ext_left i {
+    color: white;
+    left: 3%;
+    position: absolute;
+}
+
+.color_menu li {
+    cursor: pointer;
+}
+
+
+
+
+
+
+.ab {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+
+.co2 {
+    color: #283239;
+}
+
+
+.box {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    box-shadow: 0 0px 0px rgba(31, 31, 31, 0.8);
+}
+
+
+.co {
+    color: #8ab0c7;
+}
+
+
+.bk {
+    color: black;
+}
